@@ -4,12 +4,17 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <button className="logout">تسجيل خروج</button>
+      <div className="auth-buttons">
+        <button className="btn login">Login</button>
+        <button className="btn signup">Sign Up</button>
+      </div>
+
       <nav className="nav">
-        <a href="#" className="nav-link">الخطة</a>
-        <a href="#" className="nav-link">كيفية العمرة</a>
+        <button className="nav-btn">The Plan</button>
+        <button className="nav-btn">How to Perform Umrah</button>
       </nav>
-        <div className="profile">الحساب</div>
+
+      <div className="profile">Account</div>
     </header>
   );
 };
